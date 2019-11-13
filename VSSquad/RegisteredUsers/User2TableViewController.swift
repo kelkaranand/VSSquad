@@ -54,6 +54,15 @@ class volunteer2TableViewController: UITableViewController {
            
            return cell
        }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(volunteers[indexPath.row].firstName)
+        let alertController = UIAlertController(title: "Volunteer", message:
+            volunteers[indexPath.row].firstName + " " + volunteers[indexPath.row].lastName, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+
+        self.present(alertController, animated: true, completion: nil)
+    }
         
 
         /*
@@ -105,7 +114,9 @@ class volunteer2TableViewController: UITableViewController {
         private func loadSamplevolunteers() {
            
             
-            let volunteer1 = Volunteer(firstName: "Lisa", lastName: "Jennings", regEvents: "5", memberSince: "2019")!
+            guard let volunteer1 = Volunteer(firstName: "Lisa", lastName: "Jennings", regEvents: "5", memberSince: "2019")else {
+                fatalError("Unable to instantiate volunteer2")
+            }
                 
              guard let volunteer2 = Volunteer(firstName: "Lexus", lastName: "Davis", regEvents: "20", memberSince: "2016")
                  else {
@@ -128,3 +139,4 @@ class volunteer2TableViewController: UITableViewController {
             
         }
     }
+

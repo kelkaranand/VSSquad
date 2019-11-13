@@ -18,22 +18,24 @@ class ViewController: UIViewController {
     
     //MARK: Action
     
-   @IBAction func Login(_ sender: UIButton) {
-  }
-   
+    @IBAction func login(_ sender: UIButton) {
+        if UsernameField.text!.isEmpty || PasswordField.text!.isEmpty {
+            let alertController = UIAlertController(title: "Warning", message:
+                "Please enter Username & Password", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
+       else {
+            self.performSegue(withIdentifier: "ShowUserSegue", sender:  self)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       if segue.identifier == "ShowUserSegue"
-        {
-          if segue.destination is volunteer2TableViewController {
-    
-           }
-      }
-    }
-
 }
 

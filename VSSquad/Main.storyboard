@@ -61,7 +61,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lU0-WX-ToG" kind="show" identifier="ShowUserSegue" id="jeE-Zp-OwM"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRV-RX-Wuv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,6 +95,7 @@
                         <outlet property="PasswordField" destination="fP2-Hv-dYJ" id="Jc1-Up-hHl"/>
                         <outlet property="Username" destination="6IP-a1-KZn" id="CMG-SH-jys"/>
                         <outlet property="UsernameField" destination="3yJ-yF-HyM" id="2t6-1o-a3r"/>
+                        <segue destination="lU0-WX-ToG" kind="show" identifier="ShowUserSegue" animates="NO" id="Fy0-ld-Ikl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -180,7 +181,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3P2-u1-SfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="896"/>
+            <point key="canvasLocation" x="1890" y="71"/>
         </scene>
         <!--Volunteeriew Controller-->
         <scene sceneID="vhw-jd-UFQ">
