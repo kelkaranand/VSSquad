@@ -66,6 +66,8 @@
 		14185109237C85B1001224D3 /* VSSquad */ = {
 			isa = PBXGroup;
 			children = (
+				BE9522A9237DCBF600D22149 /* Home */,
+				BE9522A8237DCBC700D22149 /* NavContainer */,
 				4E91E301237C8AF3008B3CDC /* RegisteredUsers */,
 				4E91E2FF237C89DA008B3CDC /* Main.storyboard */,
 				4E91E2FD237C89B8008B3CDC /* ViewController.swift */,
@@ -88,6 +90,20 @@
 				4E91E306237C8AF3008B3CDC /* UserList.storyboard */,
 			);
 			path = RegisteredUsers;
+			sourceTree = "<group>";
+		};
+		BE9522A8237DCBC700D22149 /* NavContainer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavContainer;
+			sourceTree = "<group>";
+		};
+		BE9522A9237DCBF600D22149 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
