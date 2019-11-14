@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             
         }
        else {
-            self.performSegue(withIdentifier: "ShowUserSegue", sender:  self)
+            self.performSegue(withIdentifier: "NavContainerSegue", sender:  self)
         }
     }
     

@@ -18,6 +18,8 @@
 		4E91E309237C8AF3008B3CDC /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91E304237C8AF3008B3CDC /* Volunteer.swift */; };
 		4E91E30A237C8AF3008B3CDC /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91E305237C8AF3008B3CDC /* UserTableViewCell.swift */; };
 		4E91E30B237C8AF3008B3CDC /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E91E306237C8AF3008B3CDC /* UserList.storyboard */; };
+		BE9522AB237DCCAC00D22149 /* NavContainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9522AA237DCCAC00D22149 /* NavContainer.storyboard */; };
+		BE9522AF237DCD2800D22149 /* NavContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9522AE237DCD2800D22149 /* NavContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		4E91E304237C8AF3008B3CDC /* Volunteer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
 		4E91E305237C8AF3008B3CDC /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		4E91E306237C8AF3008B3CDC /* UserList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserList.storyboard; sourceTree = "<group>"; };
+		BE9522AA237DCCAC00D22149 /* NavContainer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavContainer.storyboard; sourceTree = "<group>"; };
+		BE9522AE237DCD2800D22149 /* NavContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		BE9522A8237DCBC700D22149 /* NavContainer */ = {
 			isa = PBXGroup;
 			children = (
+				BE9522AA237DCCAC00D22149 /* NavContainer.storyboard */,
+				BE9522AE237DCD2800D22149 /* NavContainerViewController.swift */,
 			);
 			path = NavContainer;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9522AB237DCCAC00D22149 /* NavContainer.storyboard in Resources */,
 				4E91E300237C89DA008B3CDC /* Main.storyboard in Resources */,
 				4E91E30B237C8AF3008B3CDC /* UserList.storyboard in Resources */,
 				14185118237C85B2001224D3 /* LaunchScreen.storyboard in Resources */,
@@ -182,6 +189,7 @@
 				1418510B237C85B1001224D3 /* AppDelegate.swift in Sources */,
 				4E91E30A237C8AF3008B3CDC /* UserTableViewCell.swift in Sources */,
 				4E91E309237C8AF3008B3CDC /* Volunteer.swift in Sources */,
+				BE9522AF237DCD2800D22149 /* NavContainerViewController.swift in Sources */,
 				14185113237C85B1001224D3 /* VSSquad.xcdatamodeld in Sources */,
 				4E91E307237C8AF3008B3CDC /* VolunteerViewController.swift in Sources */,
 				4E91E308237C8AF3008B3CDC /* User2TableViewController.swift in Sources */,
