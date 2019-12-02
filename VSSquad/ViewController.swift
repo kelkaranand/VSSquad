@@ -16,6 +16,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var Password: UILabel!
     @IBOutlet weak var PasswordField: UITextField!
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        //Tap on screen to dismiss keyboard
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+    }
+    
     //MARK: Action
     
     @IBAction func login(_ sender: UIButton) {
@@ -30,11 +41,6 @@ class ViewController: UIViewController {
        else {
             self.performSegue(withIdentifier: "NavContainerSegue", sender:  self)
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
 }

@@ -23,10 +23,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Pd-vq-S8G">
-                                                <rect key="frame" x="0.0" y="0.0" width="84" height="79.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="CbN-g5-0GD">
-                                                        <rect key="frame" x="21" y="20" width="42" height="39.5"/>
+                                                        <rect key="frame" x="21" y="21" width="42" height="42"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -38,10 +38,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-Zc-tp7">
-                                                <rect key="frame" x="84" y="0.0" width="83.5" height="79.5"/>
+                                                <rect key="frame" x="84" y="0.0" width="83.5" height="84"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myEvents" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-Bk-heW">
-                                                        <rect key="frame" x="21" y="20" width="41.5" height="39.5"/>
+                                                        <rect key="frame" x="21" y="21" width="41.5" height="42"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -53,10 +53,10 @@
                                                 </constraints>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIe-SR-xb7">
-                                                <rect key="frame" x="167.5" y="0.0" width="84" height="79.5"/>
+                                                <rect key="frame" x="167.5" y="0.0" width="84" height="84"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QRScanner" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-ko-ndF">
-                                                        <rect key="frame" x="21" y="20" width="42" height="39.5"/>
+                                                        <rect key="frame" x="21" y="21" width="42" height="42"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,10 +68,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjr-rh-cuC">
-                                                <rect key="frame" x="335" y="0.0" width="84" height="79.5"/>
+                                                <rect key="frame" x="335" y="0.0" width="84" height="84"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="jlS-jY-yNv">
-                                                        <rect key="frame" x="21" y="20" width="42" height="39.5"/>
+                                                        <rect key="frame" x="21" y="21" width="42" height="42"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -83,10 +83,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhg-YC-Qt0">
-                                                <rect key="frame" x="251.5" y="0.0" width="83.5" height="79.5"/>
+                                                <rect key="frame" x="251.5" y="0.0" width="83.5" height="84"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newEvent" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-zt-nyA">
-                                                        <rect key="frame" x="21" y="20" width="42" height="39.5"/>
+                                                        <rect key="frame" x="21" y="21" width="42" height="42"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -115,7 +115,7 @@
                                             <constraint firstItem="sIe-SR-xb7" firstAttribute="top" secondItem="RsW-AI-va8" secondAttribute="top" id="eaP-1k-6xJ"/>
                                             <constraint firstItem="5Pd-vq-S8G" firstAttribute="width" secondItem="RsW-AI-va8" secondAttribute="width" multiplier="0.2" constant="1" id="hm4-fw-5uS"/>
                                             <constraint firstItem="hjr-rh-cuC" firstAttribute="top" secondItem="RsW-AI-va8" secondAttribute="top" id="k5w-lQ-xLc"/>
-                                            <constraint firstItem="5Pd-vq-S8G" firstAttribute="height" secondItem="RsW-AI-va8" secondAttribute="height" multiplier="0.8" id="pzt-Ws-rrf"/>
+                                            <constraint firstItem="5Pd-vq-S8G" firstAttribute="height" secondItem="mhg-YC-Qt0" secondAttribute="width" id="pzt-Ws-rrf"/>
                                             <constraint firstItem="CNS-Zc-tp7" firstAttribute="leading" secondItem="5Pd-vq-S8G" secondAttribute="trailing" id="qut-9U-NXo"/>
                                             <constraint firstItem="sIe-SR-xb7" firstAttribute="width" secondItem="5Pd-vq-S8G" secondAttribute="width" id="tKu-FW-aMd"/>
                                             <constraint firstItem="mhg-YC-Qt0" firstAttribute="height" secondItem="5Pd-vq-S8G" secondAttribute="height" id="ueJ-So-ExJ"/>

@@ -21,7 +21,7 @@ class NavContainerViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        QRView.layer.cornerRadius = QRView.frame.size.width/2
+        QRView.layer.cornerRadius = QRView.layer.bounds.width / 2
         QRView.clipsToBounds = true
         
     }
