@@ -22,7 +22,7 @@ class NavContainerViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         QRView.layer.cornerRadius = QRView.layer.bounds.width / 2
-        QRView.clipsToBounds = true
+        QRView.layer.masksToBounds = true
         
     }
 
