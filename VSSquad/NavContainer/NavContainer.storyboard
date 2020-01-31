@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fvy-Vc-LDW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fvy-Vc-LDW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -153,11 +153,65 @@
                     </view>
                     <connections>
                         <outlet property="QRView" destination="sIe-SR-xb7" id="V9i-rk-q9f"/>
+                        <outlet property="addEventsView" destination="hjr-rh-cuC" id="5Cr-7s-S0W"/>
+                        <outlet property="homeView" destination="5Pd-vq-S8G" id="cVd-rf-SUv"/>
+                        <outlet property="myEventsView" destination="CNS-Zc-tp7" id="3QB-XN-Qm2"/>
+                        <outlet property="searchEventsView" destination="mhg-YC-Qt0" id="YcS-0L-ODt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6B-Kh-lus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-400" y="-153"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="L1e-eH-tgG">
+            <objects>
+                <viewControllerPlaceholder id="zOd-7E-QmC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9gy-KH-47w"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AqF-0U-txS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="-445"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="JQy-8m-Ta0">
+            <objects>
+                <viewControllerPlaceholder id="YiS-6y-JfS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cSB-wF-e5o"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJ5-bX-G8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="-380"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="4lB-q7-FfE">
+            <objects>
+                <viewControllerPlaceholder id="M1U-4e-hRf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="38t-Mr-ErR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8j-U2-V6k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="-308"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="sAM-Os-ZLW">
+            <objects>
+                <viewControllerPlaceholder id="Bv3-RF-IGc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gES-EX-M1T"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ziJ-Fs-Pu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637" y="-224"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="b79-PS-9V3">
+            <objects>
+                <viewControllerPlaceholder id="0QA-iJ-5kj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bBl-PY-TDG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LH7-HU-uPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="-123"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5Zl-L9-m88">
