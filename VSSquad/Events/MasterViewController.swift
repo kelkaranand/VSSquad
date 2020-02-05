@@ -9,8 +9,27 @@
 import UIKit
 
 class MasterViewController: UIViewController {
+    
+//    var container: ContainerViewController!
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//               if segue.identifier == "ContainerView"{
+//                container = segue.destination as? ContainerViewController
+//                   container.animationDurationWithOptions = (0.5, .transitionCrossDissolve)
+//               }
+//           }
+//     @IBAction func segmentControl(_ sender: UISegmentedControl) {
+//           if sender.selectedSegmentIndex == 0{
+//
+//
+//               container!.segueIdentifierReceivedFromParent("eventslistsegue")
+//           }else{
+//               container!.segueIdentifierReceivedFromParent("myeventslistsegue")
+//                  }
+//       }
 
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
+
+/*  @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,4 +114,5 @@ class MasterViewController: UIViewController {
             }
         }
 }
-
+*/
+ }
