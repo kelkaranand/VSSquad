@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        assignbackground()
         //Tap on screen to dismiss keyboard
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
@@ -41,6 +41,19 @@ class ViewController: UIViewController {
        else {
             self.performSegue(withIdentifier: "NavContainerSegue", sender:  self)
         }
+    }
+    
+    func assignbackground(){
+        let background = UIImage(named: "StockImage1")
+
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
     }
     
 }
