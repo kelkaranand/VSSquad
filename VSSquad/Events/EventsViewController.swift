@@ -11,6 +11,8 @@ import UIKit
 class EventsViewController: UIViewController {
 var events = [Event]()
     
+   
+    
     @IBOutlet var eventsListView: UITableView!
     @IBOutlet var SearchContainer: UIView!
    var searchController: UISearchController!
@@ -19,8 +21,8 @@ var events = [Event]()
     
        override func viewDidLoad() {
             super.viewDidLoad()
-   addEventstoDataSource(eventCount: 5, event: "Event Details: Volunteer Event, Location: Polaris Conference Center")
-        addEventstoDataSource(eventCount: 5, event: "Event Details: Volunteer Event, Location: Offsite")
+   addEventstoDataSource(eventCount: 5, event: "Volunteer Event @ Polaris")
+        addEventstoDataSource(eventCount: 5, event: "Volunteer Event Offsite")
         eventsListView.delegate = self
         eventsListView.dataSource = self
         
@@ -31,6 +33,12 @@ var events = [Event]()
             SearchContainer.addSubview(searchController.searchBar)
             searchController.searchBar.delegate = self as! UISearchBarDelegate
         }
+    
+    @IBAction func reset(_ sender: Any) {
+        restoreDataSource()
+    }
+    
+    
     func addEventstoDataSource (eventCount: Int, event: String){
     
     for index in 1...eventCount{

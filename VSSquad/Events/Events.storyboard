@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aso-CQ-Onf">
-                                <rect key="frame" x="0.0" y="134" width="376" height="534"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aso-CQ-Onf">
+                                <rect key="frame" x="-1" y="44" width="376" height="623"/>
                                 <connections>
                                     <segue destination="bsU-YB-qU5" kind="embed" id="oxC-rA-EvO"/>
                                 </connections>
@@ -28,7 +28,7 @@
                             <constraint firstItem="aso-CQ-Onf" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" constant="1" id="7dx-KR-xdQ"/>
                             <constraint firstItem="aso-CQ-Onf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="J8j-ZZ-N61"/>
                             <constraint firstItem="aso-CQ-Onf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dfX-3S-jxs"/>
-                            <constraint firstItem="aso-CQ-Onf" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" constant="1" id="eyU-X8-GET"/>
+                            <constraint firstItem="aso-CQ-Onf" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="eyU-X8-GET"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -149,42 +149,58 @@
         <!--Events-->
         <scene sceneID="CmE-jM-tlM">
             <objects>
-                <viewController id="bsU-YB-qU5" customClass="EventsViewController" customModule="VSSquad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Events" id="bsU-YB-qU5" customClass="EventsViewController" customModule="VSSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oVY-j4-AOQ">
-                        <rect key="frame" x="0.0" y="0.0" width="376" height="534"/>
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9JO-lB-fUA">
-                                <rect key="frame" x="16" y="78" width="343" height="436"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Lxf-1L-isc">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lxf-1L-isc" id="jac-Cb-5co">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <view contentMode="scaleToFill" id="oa4-JG-tOu">
-                                <rect key="frame" x="16" y="20" width="343" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <viewLayoutGuide key="safeArea" id="JMs-2K-642"/>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9JO-lB-fUA">
+                                <rect key="frame" x="1" y="58" width="376" height="507"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="507" id="9qV-GY-lci"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="Lxf-1L-isc">
+                                        <rect key="frame" x="0.0" y="28" width="376" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lxf-1L-isc" id="jac-Cb-5co">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eiw-Ww-OYY">
+                                <rect key="frame" x="140" y="573" width="96" height="50"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="bsU-YB-qU5" eventType="touchUpInside" id="Om8-ux-YIh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Vbv-QE-Tvm" firstAttribute="bottom" secondItem="9JO-lB-fUA" secondAttribute="bottom" constant="20" id="4sy-zK-6mQ"/>
-                            <constraint firstItem="9JO-lB-fUA" firstAttribute="trailing" secondItem="oa4-JG-tOu" secondAttribute="trailing" id="FIk-7t-gv3"/>
-                            <constraint firstItem="9JO-lB-fUA" firstAttribute="leading" secondItem="oa4-JG-tOu" secondAttribute="leading" id="Vqi-8u-bTt"/>
-                            <constraint firstItem="9JO-lB-fUA" firstAttribute="top" secondItem="oa4-JG-tOu" secondAttribute="bottom" constant="8" id="eUN-fq-aNx"/>
+                            <constraint firstItem="Eiw-Ww-OYY" firstAttribute="leading" secondItem="Vbv-QE-Tvm" secondAttribute="leading" constant="140" id="5Gj-F4-F7J"/>
+                            <constraint firstItem="Vbv-QE-Tvm" firstAttribute="bottom" secondItem="Eiw-Ww-OYY" secondAttribute="bottom" id="9WI-3n-Kxc"/>
+                            <constraint firstItem="Eiw-Ww-OYY" firstAttribute="top" secondItem="9JO-lB-fUA" secondAttribute="bottom" constant="8" id="9ba-Qs-Tac"/>
+                            <constraint firstItem="9JO-lB-fUA" firstAttribute="trailing" secondItem="oa4-JG-tOu" secondAttribute="trailing" constant="1" id="FIk-7t-gv3"/>
+                            <constraint firstItem="Eiw-Ww-OYY" firstAttribute="centerX" secondItem="9JO-lB-fUA" secondAttribute="centerX" constant="-1" id="KEk-6S-e27"/>
+                            <constraint firstItem="9JO-lB-fUA" firstAttribute="leading" secondItem="oa4-JG-tOu" secondAttribute="leading" constant="1" id="Vqi-8u-bTt"/>
+                            <constraint firstItem="9JO-lB-fUA" firstAttribute="top" secondItem="Vbv-QE-Tvm" secondAttribute="top" constant="58" id="i1n-fr-oxF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vbv-QE-Tvm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Events" id="Wd6-ly-5HW"/>
                     <connections>
                         <outlet property="SearchContainer" destination="oa4-JG-tOu" id="Bd4-Wa-cIy"/>
                         <outlet property="eventsListView" destination="9JO-lB-fUA" id="v9E-4o-QNz"/>
@@ -192,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGq-RK-Svz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-808" y="833.88305847076469"/>
+            <point key="canvasLocation" x="-746" y="797"/>
         </scene>
         <!--Events Table View Controller-->
         <scene sceneID="lLR-2V-iev">
