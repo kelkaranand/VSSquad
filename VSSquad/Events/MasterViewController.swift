@@ -9,8 +9,37 @@
 import UIKit
 
 class MasterViewController: UIViewController {
+     
+//    @IBOutlet var SearchContainer: UIView!
+//    var searchController: UISearchController!
+//    var orginalDataSource:[String] = [""]
+//    var currentDataSource: [String] = [""]
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        searchController = UISearchController(searchResultsController: nil)
+//        searchController.searchResultsUpdater = self
+//        searchController.obscuresBackgroundDuringPresentation = false
+//        SearchContainer.addSubview(searchController.searchBar)
+//        searchController.searchBar.delegate = self as! UISearchBarDelegate
+//    }
+}
+//    extension MasterViewController: UISearchResultsUpdating{
+//
+//        func updateSearchResults (for searchController: UISearchController){
+//        }
+//}
+//extension MasterViewController: UISearchBarDelegate{
+//            func searchBarSearchButtonClicked(_searchBar: UISearchBar){
+//
+//            }
+//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//
+//    }
+//            }
+
     
-   
     
 //    var container: ContainerViewController!
 //
@@ -117,6 +146,6 @@ class MasterViewController: UIViewController {
         }
 }
 */
- }
+ 
 
 

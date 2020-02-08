@@ -10,30 +10,22 @@ import UIKit
 
 class EventsTableViewController: UITableViewController {
 
-    
-    
-    
+     
+       
+       // MARK: - Properties
+       
+       
+      
     var events = [Event]()
 
            override func viewDidLoad() {
                super.viewDidLoad()
-            
-            let searchController = UISearchController(searchResultsController: nil)
-
-                   // 1
-            searchController.searchResultsUpdater = self as? UISearchResultsUpdating
-                   // 2
-                   searchController.obscuresBackgroundDuringPresentation = false
-                   // 3
-                   searchController.searchBar.placeholder = "Search Events"
-                   // 4
-                   navigationItem.searchController = searchController
-                   // 5
-                   definesPresentationContext = true
-               
-               // Load the sample data.
                loadSampleevents()
-           }
+            
+            
+            
+    }
+    
 
            // MARK: - Table view data source
 
@@ -153,8 +145,5 @@ class EventsTableViewController: UITableViewController {
            }
 
 }
-extension EventsTableViewController: UISearchResultsUpdating {
-  func updateSearchResults(for searchController: UISearchController) {
-    // TODO
-  }
-}
+   
+

@@ -11,7 +11,7 @@
 		14185113237C85B1001224D3 /* VSSquad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14185111237C85B1001224D3 /* VSSquad.xcdatamodeld */; };
 		14185115237C85B2001224D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14185114237C85B2001224D3 /* Assets.xcassets */; };
 		14185118237C85B2001224D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14185116237C85B2001224D3 /* LaunchScreen.storyboard */; };
-		4E18117923EA526400F1C9D3 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E18117823EA526400F1C9D3 /* ContainerViewController.swift */; };
+		4E18117D23EF43E700F1C9D3 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E18117C23EF43E700F1C9D3 /* EventsViewController.swift */; };
 		4E91E2FE237C89B8008B3CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91E2FD237C89B8008B3CDC /* ViewController.swift */; };
 		4E91E300237C89DA008B3CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E91E2FF237C89DA008B3CDC /* Main.storyboard */; };
 		4E91E307237C8AF3008B3CDC /* VolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91E302237C8AF3008B3CDC /* VolunteerViewController.swift */; };
@@ -37,7 +37,7 @@
 		14185114237C85B2001224D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14185117237C85B2001224D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14185119237C85B2001224D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E18117823EA526400F1C9D3 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		4E18117C23EF43E700F1C9D3 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		4E91E2FD237C89B8008B3CDC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E91E2FF237C89DA008B3CDC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E91E302237C8AF3008B3CDC /* VolunteerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				4EE2E31523C7536E003AD06E /* AllEvents */,
 				4EE2E31823C7536E003AD06E /* MasterViewController.swift */,
 				4EE2E31923C7536E003AD06E /* MyEvents */,
-				4E18117823EA526400F1C9D3 /* ContainerViewController.swift */,
+				4E18117C23EF43E700F1C9D3 /* EventsViewController.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -241,7 +241,6 @@
 				4E91E309237C8AF3008B3CDC /* Volunteer.swift in Sources */,
 				BE9522AF237DCD2800D22149 /* NavContainerViewController.swift in Sources */,
 				4EE2E32223C7536E003AD06E /* MyEventsTableViewController.swift in Sources */,
-				4E18117923EA526400F1C9D3 /* ContainerViewController.swift in Sources */,
 				14185113237C85B1001224D3 /* VSSquad.xcdatamodeld in Sources */,
 				4E91E307237C8AF3008B3CDC /* VolunteerViewController.swift in Sources */,
 				4EE2E32023C7536E003AD06E /* MasterViewController.swift in Sources */,
@@ -249,6 +248,7 @@
 				4E91E308237C8AF3008B3CDC /* User2TableViewController.swift in Sources */,
 				4EE2E31F23C7536E003AD06E /* EventsTableViewCell.swift in Sources */,
 				4EE2E32123C7536E003AD06E /* MyEventsTableViewCell.swift in Sources */,
+				4E18117D23EF43E700F1C9D3 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
