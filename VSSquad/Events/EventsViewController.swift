@@ -16,7 +16,7 @@ var events = [Event]()
     @IBOutlet var eventsListView: UITableView!
     @IBOutlet var SearchContainer: UIView!
    var searchController: UISearchController!
-       var originalDataSource:[String] = [""]
+       var originalDataSource:[String] = ["1st Event @ Fire & Iron"]
       var currentDataSource: [String] = [""]
     
        override func viewDidLoad() {
