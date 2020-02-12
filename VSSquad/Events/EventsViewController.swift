@@ -38,6 +38,9 @@ var events = [Event]()
         restoreDataSource()
     }
     
+    @IBAction func myeventsbutton(_ sender: Any) {
+//        self.performSegue(withIdentifier: "ShowMyEvents", sender:  self)
+    }
     
     func addEventstoDataSource (eventCount: Int, event: String){
     
