@@ -22,18 +22,22 @@ class Event {
      var eventID: String
      var eventName: String
      var eventDate: String
+     var eventTime: String
      var eventAddress: String
+     var eventDescription: String
      
     //MARK: Initialization
         
-     init?(eventID: String, eventName: String, eventDate: String, eventAddress: String) {
+    init?(eventID: String, eventName: String, eventDate: String, eventTime: String, eventAddress: String, eventDescription: String) {
            
            
            // Initialize stored properties.
            self.eventID = eventID
            self.eventName = eventName
            self.eventDate = eventDate
+        self.eventTime = eventTime
            self.eventAddress = eventAddress
+           self.eventDescription = eventDescription
            
        }
     

@@ -119,23 +119,23 @@ class EventsTableViewController: UITableViewController {
            private func loadSampleevents() {
               
                
-               guard let event1 = Event(eventID: "Event Id: 1", eventName: "Name: Test Event 1", eventDate: "Date: 11/23/2019", eventAddress: "Address: 1234 Event Ln, Columbus, Oh 43229")else {
+            guard let event1 = Event(eventID: "Event Id: 1", eventName: "Name: Test Event 1", eventDate: "Date: 11/23/2019", eventTime: "",  eventAddress: "Address: 1234 Event Ln, Columbus, Oh 43229", eventDescription: "")else {
                    fatalError("Unable to instantiate event1")
                }
                    
-                guard let event2 = Event(eventID: "Event Id: 2", eventName: "Name: Test Event 2", eventDate:"Date: 11/25/2019" , eventAddress: "Address: 1235 Event Ln, Columbus, OH 43229")
+            guard let event2 = Event(eventID: "Event Id: 2", eventName: "Name: Test Event 2", eventDate:"Date: 11/25/2019" , eventTime: "", eventAddress: "Address: 1235 Event Ln, Columbus, OH 43229", eventDescription: "")
                     else {
                     fatalError("Unable to instantiate event2")
                 }
-               guard let event3 = Event(eventID: "Event Id: 3", eventName: "Name: Test Event 3", eventDate: "Date: 11/26/2019", eventAddress: "Address: 1236 Event Ln, Columbus, OH 43229")
+            guard let event3 = Event(eventID: "Event Id: 3", eventName: "Name: Test Event 3", eventDate: "Date: 11/26/2019", eventTime: "", eventAddress: "Address: 1236 Event Ln, Columbus, OH 43229", eventDescription: "")
                    else {
                    fatalError("Unable to instantiate event3")
                }
-               guard let event4 = Event(eventID: "Event Id: 4", eventName: "Name: Test Event 4", eventDate: "Date: 11/27/2019", eventAddress: "Address: 1237 Event Ln, Columbus, OH 43229")
+            guard let event4 = Event(eventID: "Event Id: 4", eventName: "Name: Test Event 4", eventDate: "Date: 11/27/2019", eventTime: "", eventAddress: "Address: 1237 Event Ln, Columbus, OH 43229", eventDescription: "")
                    else {
                    fatalError("Unable to instantiate event4")
                }
-               guard let event5 = Event(eventID: "Event Id: 5", eventName: "Name: Test Event 5", eventDate: "Date: 11/28/2019", eventAddress: "Address: 1238 Event Ln, Columbus, OH 43229")
+            guard let event5 = Event(eventID: "Event Id: 5", eventName: "Name: Test Event 5", eventDate: "Date: 11/28/2019", eventTime: "", eventAddress: "Address: 1238 Event Ln, Columbus, OH 43229", eventDescription: "")
                    else {
                    fatalError("Unable to instantiate event5")
                }

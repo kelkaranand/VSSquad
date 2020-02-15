@@ -16,15 +16,14 @@ var events = [Event]()
     @IBOutlet var eventsListView: UITableView!
     @IBOutlet var SearchContainer: UIView!
    var searchController: UISearchController!
-       var originalDataSource:[String] = ["1st Event @ Fire & Iron"]
-      var currentDataSource: [String] = [""]
-    var adminDataSource: [String] = ["1st Event @ Fire & Iron", "2nd Event @ Fire & Iron","3rd Event @ Fire & Iron","4th Event @ Fire & Iron"]
+    var originalDataSource:[String] = [""]
+    var currentDataSource:[String] = [""]
+    var adminDataSource:[String] = [""]
     var showAdminEvents = false
 
        override func viewDidLoad() {
             super.viewDidLoad()
-   addEventstoDataSource(eventCount: 5, event: "Volunteer Event @ Polaris")
-        addEventstoDataSource(eventCount: 5, event: "Volunteer Event Offsite")
+        loadSampleevents()
         eventsListView.delegate = self
         eventsListView.dataSource = self
         
@@ -46,11 +45,11 @@ var events = [Event]()
         eventsListView.reloadData()
     }
     
-    func addEventstoDataSource (eventCount: Int, event: String){
+    func addEventstoDataSource (eventCount: Int, eventName: String, eventDate: String, eventTime: String, eventAddress: String, eventDescription: String){
     
-    for index in 1...eventCount{
-    originalDataSource.append ("\(event) #\(index)")
-    }
+//    for index in 1...eventCount{
+//    originalDataSource.append ("\(eventName) \(eventDate) \(eventTime) #\(index)")
+//    }
 
     }
     func filterCurrentDataSource(searchTerm: String) {
@@ -93,6 +92,41 @@ var events = [Event]()
             }
     
         }
+        
+        private func loadSampleevents() {
+                     
+                      
+                   guard let event1 = Event(eventID: "1", eventName: "Volunteer Event @ Polaris", eventDate: "3/2/2020", eventTime: "1pm-5pm", eventAddress: "1111 Polaris Pkwy", eventDescription: "Contact Coordinator to Register")else {
+                          fatalError("Unable to instantiate event1")
+                      }
+                          
+                   guard let event2 = Event(eventID: "2", eventName: "Volunteer Event @ Polaris", eventDate: "3/15/2020", eventTime: "1pm-5pm", eventAddress: "1111 Polaris Pkwy", eventDescription: "Contact Coordinator to Register")
+                           else {
+                           fatalError("Unable to instantiate event2")
+                       }
+            guard let event3 = Event(eventID: "3", eventName: "Volunteer Event @ Polaris", eventDate: "3/25/2020", eventTime: "1pm-5pm", eventAddress: "1111 Polaris Pkwy", eventDescription: "Contact Coordinator to Register")
+                          else {
+                          fatalError("Unable to instantiate event3")
+                      }
+                    guard let event4 = Event(eventID: "Event Id: 4", eventName: "Volunteer Event @ Polaris", eventDate: "4/2/2020", eventTime: "1pm-5pm", eventAddress: "1111 Polaris Pkwy", eventDescription: "Contact Coordinator to Register")
+                          else {
+                          fatalError("Unable to instantiate event4")
+                      }
+                   guard let event5 = Event(eventID: "Event Id: 5", eventName: "Volunteer Event @ Polaris", eventDate: "4/15/2020", eventTime: "1pm-5pm", eventAddress: "1111 Polaris Pkwy", eventDescription: "Contact Coordinator to Register")
+                          else {
+                          fatalError("Unable to instantiate event5")
+                      }
+                      
+                      events += [event1, event2, event3, event4, event5]
+            
+            originalDataSource = ["\(event1.eventDate) \(event1.eventName)", "\(event2.eventDate) \(event2.eventName)", "\(event3.eventDate) \(event3.eventName)", "\(event4.eventDate) \(event4.eventName)",
+            "\(event5.eventDate) \(event5.eventName)"]
+                      
+            
+            adminDataSource = ["\(event1.eventDate) \(event1.eventName)",  "\(event3.eventDate) \(event3.eventName)",
+                       "\(event5.eventDate) \(event5.eventName)"]
+                  }
+
                 }
 
 extension EventsViewController: UITableViewDataSource, UITableViewDelegate{
