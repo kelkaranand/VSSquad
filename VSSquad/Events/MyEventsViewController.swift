@@ -28,10 +28,10 @@ class MyEventsViewController: UIViewController {
             
             currentDataSource = originalDataSource
                 searchController = UISearchController(searchResultsController: nil)
-            searchController.searchResultsUpdater = self as! UISearchResultsUpdating
+            searchController.searchResultsUpdater = self as UISearchResultsUpdating
                 searchController.obscuresBackgroundDuringPresentation = false
                 myeventSearchContainer.addSubview(searchController.searchBar)
-                searchController.searchBar.delegate = self as! UISearchBarDelegate
+            searchController.searchBar.delegate = self as UISearchBarDelegate
             }
         
        

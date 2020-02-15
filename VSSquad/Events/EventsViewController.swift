@@ -18,7 +18,9 @@ var events = [Event]()
    var searchController: UISearchController!
        var originalDataSource:[String] = ["1st Event @ Fire & Iron"]
       var currentDataSource: [String] = [""]
-    
+    var adminDataSource: [String] = ["1st Event @ Fire & Iron", "2nd Event @ Fire & Iron","3rd Event @ Fire & Iron","4th Event @ Fire & Iron"]
+    var showAdminEvents = false
+
        override func viewDidLoad() {
             super.viewDidLoad()
    addEventstoDataSource(eventCount: 5, event: "Volunteer Event @ Polaris")
@@ -28,18 +30,20 @@ var events = [Event]()
         
         currentDataSource = originalDataSource
             searchController = UISearchController(searchResultsController: nil)
-        searchController.searchResultsUpdater = self as! UISearchResultsUpdating
+        searchController.searchResultsUpdater = self as UISearchResultsUpdating
             searchController.obscuresBackgroundDuringPresentation = false
             SearchContainer.addSubview(searchController.searchBar)
-            searchController.searchBar.delegate = self as! UISearchBarDelegate
+        searchController.searchBar.delegate = self as UISearchBarDelegate
         }
     
     @IBAction func reset(_ sender: Any) {
         restoreDataSource()
     }
+    @IBAction func adminEvents(_ sender: Any) {
     
-    @IBAction func myeventsbutton(_ sender: Any) {
-//        self.performSegue(withIdentifier: "ShowMyEvents", sender:  self)
+        showAdminEvents = true
+        currentDataSource = adminDataSource
+        eventsListView.reloadData()
     }
     
     func addEventstoDataSource (eventCount: Int, event: String){

@@ -195,7 +195,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KDl-E3-Ovq" kind="show" identifier="ShowMyEvents" id="IKH-Yz-jDY"/>
+                                    <action selector="adminEvents:" destination="bsU-YB-qU5" eventType="touchUpInside" id="xn5-5J-qS3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -246,7 +246,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="prR-rc-Fgh">
                                                     <rect key="frame" x="0.0" y="0.0" width="376" height="39.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbK-cK-wuW">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbK-cK-wuW">
                                                             <rect key="frame" x="0.0" y="0.0" width="376" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
@@ -318,7 +318,7 @@
             <objects>
                 <viewController title="My Events" id="KDl-E3-Ovq" userLabel="MyEvents" customClass="MyEventsViewController" customModule="VSSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aSN-Kk-D83">
-                        <rect key="frame" x="0.0" y="0.0" width="376" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="BuA-N0-wvS">
@@ -346,7 +346,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zO-Oi-dQO">
-                                <rect key="frame" x="140" y="573" width="96" height="30"/>
+                                <rect key="frame" x="140" y="573" width="96" height="94"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
