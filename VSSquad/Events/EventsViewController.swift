@@ -36,6 +36,7 @@ var events = [Event]()
         }
     
     @IBAction func reset(_ sender: Any) {
+        showAdminEvents = false
         restoreDataSource()
     }
     @IBAction func adminEvents(_ sender: Any) {
@@ -132,6 +133,16 @@ var events = [Event]()
 extension EventsViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if showAdminEvents == true{
+            let alertController = UIAlertController (title: "Selection", message: "Go to Roster For: \(currentDataSource[indexPath.row])", preferredStyle: .alert)
+            
+            searchController.isActive = false
+            
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
+        }
+        else{
         let alertController = UIAlertController (title: "Selection", message: "Selected: \(currentDataSource[indexPath.row])", preferredStyle: .alert)
         
         searchController.isActive = false
@@ -139,6 +150,7 @@ extension EventsViewController: UITableViewDataSource, UITableViewDelegate{
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return currentDataSource.count
