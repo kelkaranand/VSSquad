@@ -33,7 +33,7 @@ var events = [Event]()
             searchController.obscuresBackgroundDuringPresentation = false
             SearchContainer.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self as UISearchBarDelegate
-        SearchContainer.backgroundColor = UIColor.systemBlue
+        SearchContainer.backgroundColor = UIColor.blue
         }
     
     @IBAction func reset(_ sender: Any) {
