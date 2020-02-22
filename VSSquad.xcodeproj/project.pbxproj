@@ -10,6 +10,8 @@
 		1417C0E624001EBB002B4076 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1417C0E524001EBB002B4076 /* Landing.storyboard */; };
 		1417C0E824002687002B4076 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1417C0E724002687002B4076 /* LandingViewController.swift */; };
 		1417C0EA24002739002B4076 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1417C0E924002739002B4076 /* CollectionViewCell.swift */; };
+		1417C0ED2401A49E002B4076 /* hp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1417C0EC2401A49E002B4076 /* hp.gif */; };
+		1417C0EF2401A516002B4076 /* GifExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1417C0EE2401A516002B4076 /* GifExtension.swift */; };
 		1418510B237C85B1001224D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1418510A237C85B1001224D3 /* AppDelegate.swift */; };
 		14185113237C85B1001224D3 /* VSSquad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14185111237C85B1001224D3 /* VSSquad.xcdatamodeld */; };
 		14185115237C85B2001224D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14185114237C85B2001224D3 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		1417C0E524001EBB002B4076 /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
 		1417C0E724002687002B4076 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		1417C0E924002739002B4076 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1417C0EC2401A49E002B4076 /* hp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hp.gif; path = ../../../hp.gif; sourceTree = "<group>"; };
+		1417C0EE2401A516002B4076 /* GifExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifExtension.swift; sourceTree = "<group>"; };
 		14185107237C85B1001224D3 /* VSSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1418510A237C85B1001224D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14185112237C85B1001224D3 /* VSSquad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VSSquad.xcdatamodel; sourceTree = "<group>"; };
@@ -79,8 +83,10 @@
 			isa = PBXGroup;
 			children = (
 				1417C0E524001EBB002B4076 /* Landing.storyboard */,
+				1417C0EC2401A49E002B4076 /* hp.gif */,
 				1417C0E724002687002B4076 /* LandingViewController.swift */,
 				1417C0E924002739002B4076 /* CollectionViewCell.swift */,
+				1417C0EE2401A516002B4076 /* GifExtension.swift */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			files = (
 				BE9522AB237DCCAC00D22149 /* NavContainer.storyboard in Resources */,
 				4E91E300237C89DA008B3CDC /* Main.storyboard in Resources */,
+				1417C0ED2401A49E002B4076 /* hp.gif in Resources */,
 				4E91E30B237C8AF3008B3CDC /* UserList.storyboard in Resources */,
 				1417C0E624001EBB002B4076 /* Landing.storyboard in Resources */,
 				14185118237C85B2001224D3 /* LaunchScreen.storyboard in Resources */,
@@ -258,6 +265,7 @@
 				4EE2E32223C7536E003AD06E /* MyEventsTableViewController.swift in Sources */,
 				14185113237C85B1001224D3 /* VSSquad.xcdatamodeld in Sources */,
 				4E91E307237C8AF3008B3CDC /* VolunteerViewController.swift in Sources */,
+				1417C0EF2401A516002B4076 /* GifExtension.swift in Sources */,
 				4EE2E32023C7536E003AD06E /* MasterViewController.swift in Sources */,
 				4EE2E31E23C7536E003AD06E /* EventsTableViewController.swift in Sources */,
 				4E91E308237C8AF3008B3CDC /* User2TableViewController.swift in Sources */,

@@ -14,6 +14,46 @@ import MapKit
 class LandingViewController : UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    var easterEggView = UIImageView(image: UIImage.gifImageWithName("hp"))
+    
+    var showTime = false
+    
+    override func viewDidLoad() {
+        super .viewDidLoad()
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(showHarry))
+        longPress.minimumPressDuration = 3
+        welcomeLabel.addGestureRecognizer(longPress)
+        easterEggView.contentMode = .scaleAspectFit
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super .viewWillAppear(animated)
+        
+        self.view.bringSubviewToFront(easterEggView)
+        let height = self.view.bounds.height*0.18
+        let width = self.view.bounds.width*0.3
+        easterEggView.frame = CGRect(x:0, y:0, width: width, height: height)
+        self.view.addSubview(easterEggView)
+        easterEggView.center.y = self.view.bounds.height - height/2
+        easterEggView.center.x = -200
+    }
+    
+    @objc func showHarry() {
+        if(!showTime) {
+            print("here")
+            showTime = true
+            UIView.animate(withDuration: 3, delay: 0.4, options: [.curveEaseOut],
+                           animations: {
+                            self.easterEggView.center.x = self.view.bounds.width + 200
+            },completion: {
+                (finished : Bool) in
+                self.easterEggView.center.x = -200
+                self.showTime = false
+            })
+        }
+    }
     
     
 }
@@ -27,6 +67,7 @@ extension LandingViewController: UICollectionViewDataSource {
         cell.layer.cornerRadius = 10
         cell.layer.shouldRasterize = false
         cell.layer.borderWidth = 2
+
         
         let address = "1111 Polaris Parkway, Columbus, Ohio, 43240"
         let geocoder = CLGeocoder()
@@ -36,7 +77,7 @@ extension LandingViewController: UICollectionViewDataSource {
             let lat = placemark?.location?.coordinate.latitude
             let lon = placemark?.location?.coordinate.longitude
             let location = CLLocation(latitude: lat!,longitude: lon!)
-            cell.mapView.setRegion(MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000), animated: true)
+            cell.mapView.setRegion(MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000), animated: false)
             let pin = MKPointAnnotation()
             pin.title = address
             pin.coordinate = location.coordinate

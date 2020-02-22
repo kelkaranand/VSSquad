@@ -20,7 +20,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-JD-Oxu">
                                 <rect key="frame" x="0.0" y="20" width="375" height="130.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Harry!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m6z-k8-5Ff">
+                                        <rect key="frame" x="37" y="12.5" width="301" height="105.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="m6z-k8-5Ff" firstAttribute="centerY" secondItem="eMh-JD-Oxu" secondAttribute="centerY" id="jcU-Pa-bNb"/>
+                                    <constraint firstItem="m6z-k8-5Ff" firstAttribute="width" secondItem="eMh-JD-Oxu" secondAttribute="width" multiplier="0.8" constant="1" id="rHr-7g-Nu0"/>
+                                    <constraint firstItem="m6z-k8-5Ff" firstAttribute="centerX" secondItem="eMh-JD-Oxu" secondAttribute="centerX" id="sU6-bE-1bG"/>
+                                    <constraint firstItem="m6z-k8-5Ff" firstAttribute="height" secondItem="eMh-JD-Oxu" secondAttribute="height" multiplier="0.8" constant="1" id="waS-ie-R4S"/>
+                                </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qGy-Nd-PGp">
                                 <rect key="frame" x="0.0" y="150.5" width="375" height="389"/>
@@ -74,9 +88,11 @@
                                                 </label>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pjD-tW-VBU">
                                                     <rect key="frame" x="17" y="242" width="316" height="137"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </mapView>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="vad-8o-bj6" firstAttribute="width" secondItem="tjk-J0-dat" secondAttribute="width" id="3X6-Di-RhE"/>
                                             <constraint firstItem="tjk-J0-dat" firstAttribute="height" secondItem="qoj-RG-ywT" secondAttribute="height" id="5dO-D5-mzJ"/>
@@ -137,6 +153,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="qGy-Nd-PGp" id="diX-fg-jB5"/>
+                        <outlet property="welcomeLabel" destination="m6z-k8-5Ff" id="TEy-6f-2xG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XR0-6v-bg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
